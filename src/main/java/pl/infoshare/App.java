@@ -1,5 +1,6 @@
 package pl.infoshare;
 
+import javax.swing.plaf.basic.BasicLookAndFeel;
 import java.sql.SQLOutput;
 import java.util.Random;
 import java.util.Scanner;
@@ -83,5 +84,24 @@ public class App {
             }
 
 
+
+
+            int Answer= new Random().nextInt(10 ) +1;
+        Scanner scanner = new Scanner(System.in);
+
+        while(true) {
+
+
+            System.out.println("Podaj liczbe od 1 do 10 tylko bez sciemniania");
+            int Number = scanner.nextInt();
+
+            if (Number < 1 || Number > 10) {
+                System.out.println("Mialo byc bez sciemniania!");
+            }
+
+            if (Number == Answer){ System.out.println("DOBRZE!");
+            break;}
+            else System.out.println("Pudlo");
+        }
     }
 }
