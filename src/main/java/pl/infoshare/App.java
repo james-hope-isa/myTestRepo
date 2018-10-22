@@ -1,9 +1,12 @@
 package pl.infoshare;
 
 import javax.swing.plaf.basic.BasicLookAndFeel;
+import java.io.File;
 import java.sql.SQLOutput;
+import java.util.LinkedHashSet;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.Set;
 
 /**
  * Hello world!
@@ -44,6 +47,7 @@ public class App {
 //            System.out.println();
 //        }
 
+        /*
 
         int[] array=new int[11];
 
@@ -103,5 +107,33 @@ public class App {
             break;}
             else System.out.println("Pudlo");
         }
+
+        /*
+        Random rng = new Random(); // Ideally just create one instance globally
+// Note: use LinkedHashSet to maintain insertion order
+        Set<Integer> generated = new LinkedHashSet<Integer>();
+        while (generated.size() < 6)
+        {
+            Integer next = rng.nextInt(49) + 1;
+            // As we're adding to a set, this will automatically do a containment check
+            generated.add(next);
+        }
+
+      Integer[] a =  (Integer[])generated.toArray();
+
+        for (Integer elem:
+             generated) {
+            for (int item:
+                 array) {
+                item == elem
+            }
+        }
+
+        */
+
+
+        File file=new File("/home/trener/Desktop/moj.txt");
+
+
     }
 }
